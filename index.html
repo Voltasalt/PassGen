@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PassGen</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/sjcl/sjcl.js"></script>
+
+    <script src="passgen.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>PassGen</h1>
+
+    <div class="form-group">
+        <label for="masterPass">Master Password</label>
+        <input type="password" class="form-control" id="masterPass" placeholder="correct horse battery staple">
+    </div>
+
+    <div class="form-group">
+        <label for="siteName">Site Name</label>
+        <input type="text" class="form-control" id="siteName" placeholder="gmail">
+    </div>
+
+    <div class="form-group">
+        <label for="output">Output Password</label>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" id="show">
+            </span>
+
+            <input type="password" class="form-control" id="output" readonly>
+        </div>
+    </div>
+</div>
+</body>
+</html>
