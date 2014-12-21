@@ -30,4 +30,6 @@ $(function() {
             $("#output").attr("type", "password");
         }
     });
+
+    $("#show").removeAttr("checked");
 });
